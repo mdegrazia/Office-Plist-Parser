@@ -6,7 +6,7 @@ The information parsed includes the access dates, file paths and file names.
 Supported versions of Office are Office 2008 and 2010. Other versions may work, but have not been tested.
 
 
-Required Library: 
+####Required Library 
   Install the biplist on Linux/OS X using:
 
     sudo easy_install biplist
@@ -17,11 +17,11 @@ Required Library:
   
   Or download the biplist library from http://github.com/wooster/biplist and manually install it.
 
-Usage:
+####Usage
 
     OfficePlistParser.py -f com.microsoft.office.plist -o recentdocs.tsv
 
-More Information:
+####More Information
 
 View the blog post at http://az4n6.blogspot.com/2013/08/ms-office-recent-docs-plist-parser.html for more information
 
