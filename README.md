@@ -7,6 +7,7 @@ Supported versions of Office are Office 2008 and 2010. Other versions may work, 
 
 
 Required Library: biplist from http://github.com/wooster/biplist
+
 Use easy install : sudo easy_install biplist
 
 
@@ -16,6 +17,7 @@ OfficePlistParser.py -f com.microsoft.office.plist -o recentdocs.tsv
 
 
 More Information:
+
 View the blog post at http://az4n6.blogspot.com/2013/08/ms-office-recent-docs-plist-parser.html for more information
 
 
