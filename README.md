@@ -7,7 +7,7 @@ Supported versions of Office are Office 2008 and 2010. Other versions may work, 
 
 
 Required Library: biplist from http://github.com/wooster/biplist
-use easy install : sudo easy_install biplist
+Use easy install : sudo easy_install biplist
 
 
 Usage:
