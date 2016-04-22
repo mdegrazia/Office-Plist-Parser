@@ -200,7 +200,6 @@ for key,value in plist.iteritems():
 					  					
 			if "SharePoint Path" in value[i]:
 				share_point_path = value[i]["SharePoint Path"]
-				print share_point_path
 				MS14[j]=[key,convert_hex_to_Hfs(hex_access_date),"SharePoint Path: ",share_point_path]
 			
 			i = i+1
