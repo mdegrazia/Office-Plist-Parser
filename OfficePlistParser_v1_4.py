@@ -40,6 +40,7 @@ import datetime
 from optparse import OptionParser
 import string
 from biplist import *
+import time
 
 
 ###############################  Functions  ################################################
@@ -54,8 +55,9 @@ def convert_hex_to_Hfs(hex_date):
 	hfs32_big_Endian = "".join(hfs32)
 	
 	 #HFS+ time is the number of seconds since 1/1/1904. We will need to subract this from Epoch, which is number of seconds since 1/1/1970		 
-	hfs_timestamp = str(datetime.datetime.fromtimestamp(int(hfs32_big_Endian,16)-2082844800))
-	 
+	epoch = (int(hfs32_big_Endian,16)-2082844800)
+	#hfs_timestamp = str(datetime.datetime.fromtimestamp(int(hfs32_big_Endian,16)-2082844800))
+	hfs_timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(epoch))
 	return(hfs_timestamp)
 	
 
